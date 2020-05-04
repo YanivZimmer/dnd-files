@@ -1,29 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
+import grape from './grape.svg'
 import './App.css';
 import Dropzone from './Dropzone'
-import DropzoneImgPrev from './DropzoneImagePrev';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>  
+        Grape
+      <img src={grape} className="App-logo" alt="logo" />
       </header>
+      <div className="Dropzone">
       <Dropzone></Dropzone>
-      <div>
-        hey
-      </div>
+      </div>      
     </div>
   );
 }
