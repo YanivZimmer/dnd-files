@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <img src={grape} className="App-logo" alt="logo" />
-        <Toolbar>Grape</Toolbar>
+         <div className="App-name">Grape</div>
       </header>
       <div className="Dropzone">
       <Dropzone></Dropzone>

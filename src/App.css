@@ -9,21 +9,28 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+.App-header .App-name{
+  padding-top: 2%;
+  padding-right: 2% ;
+}
 .App-logo {
-  pointer-events: none;
+  max-width:10%;
+  min-width: 10%;
+  max-height:10%;
+  min-height: 10%;
+  /*pointer-events: none;*/
   position:absolute;
-  top:0;left:0;bottom:0;right:0;/*expand this div to the size of its parent*/
+  /*top:0;left:0;bottom:0;right:0;*//*expand this div to the size of its parent*/
 }
 .Toolbar{
   text-align: center;
 }
 .App-header {
+  display: inline-flexbox;
   background-color: purple;
   min-height: 10vh;
   max-height: 10vh;
-  display: flex;
   flex-direction: column;
-  text-align: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
