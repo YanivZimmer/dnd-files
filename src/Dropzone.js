@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react'
 import {useDropzone} from 'react-dropzone'
-
+import './Dropzone.css'
 function Dropzone() {
   const onDrop = useCallback((acceptedFiles) => {
     acceptedFiles.forEach((file) => {
@@ -21,9 +21,11 @@ function Dropzone() {
   const {getRootProps, getInputProps} = useDropzone({onDrop})
 
   return (
-    <div {...getRootProps()}>
+    <div {...getRootProps()} className="DropZone">
+      <p>
+        Drop Here
+      </p>
       <input {...getInputProps()} />
-      <p>Drag 'n' drop some files here, or click to select files</p>
     </div>
   )
 }
